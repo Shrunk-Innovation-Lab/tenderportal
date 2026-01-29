@@ -987,7 +987,7 @@
 
     async function loadGitHubData() {
       try {
-        const githubUrl = 'https://raw.githubusercontent.com/Shrunk-Innovation-Lab/testsite/75cb66e6c44e8c50d2480c80359d3ffbe2ed3711/Cedar_Tender_Dataset.csv';
+        const githubUrl = 'https://raw.githubusercontent.com/Shrunk-Innovation-Lab/tenderportal/257b70e0c44ed5ac3b9d17300176611590f6a5f0/Cedar/Cedar_Tender_Dataset.csv';
         const response = await fetch(githubUrl);
         if (!response.ok) throw new Error(`Failed to fetch: ${response.status}`);
         const csvText = await response.text();
